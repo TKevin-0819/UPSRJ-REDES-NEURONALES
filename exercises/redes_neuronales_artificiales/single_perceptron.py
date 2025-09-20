@@ -10,6 +10,7 @@ from py_utils.logger.logger import set_logging, clog
 # Llamada a la funcion para configurar el logging
 set_logging(log_file='single_perceptron.log')
 
+
 #############################################################################################################################
 # Perceptrón de una sola neurona                                                                                            #
 # Una neurona toma n entradas (x1, x2, ... xn), las multiplica por sus respectivos pesos (w1, w2, ...wn),                   #
@@ -47,9 +48,16 @@ set_logging(log_file='single_perceptron.log')
 #           - un peso "w"
 #
 class InputData:
-    def __init__(self):
-        pass
-
+    def _init_(self, x: float):
+        #PARAMETRO DE ENTRADA DE USUARIO
+        self.x = x
+        #Inicializacion aleatoria
+        self.w = self. init_weight()
+   
+    def init_weight (self):
+        return random.random()
+    def update_weight(self, w: float):
+self.w= w
 clog(InputData)
 
 # Paso 2: Abstracción de una neurona.
@@ -67,7 +75,14 @@ clog(InputData)
 #           - una salida "a" definida por su función de activación
 #
 class Perceptron:
-    def __init__(self):
+    def __init__(self, imputs; list[imputData], b: float
+                 self.imputs = imputs
+                 self.b = b
+                  self.z = self.forward()
+    def forward ¿(self)
+    z = 0 
+    for imputs in self.imputs:
+        z = z + (imput
         pass
     
 clog(Perceptron)
