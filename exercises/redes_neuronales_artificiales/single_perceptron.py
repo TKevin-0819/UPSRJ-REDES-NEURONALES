@@ -9,7 +9,7 @@ from py_utils.logger.logger import set_logging, clog
 
 # Llamada a la funcion para configurar el logging
 set_logging(log_file='single_perceptron.log')
-
+ 
 
 #############################################################################################################################
 # Perceptrón de una sola neurona                                                                                            #
